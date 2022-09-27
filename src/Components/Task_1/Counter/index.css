@@ -11,6 +11,7 @@
     width: 50px;
     font-weight: 600;
     font-size: 14px;
+    background-color: pink
 }
 .subBtn{
     padding: 5px;
@@ -19,6 +20,13 @@
     width: 50px;
     font-weight: 600;
     font-size: 15px;
+    background-color: rgb(94, 107, 231)
+}
+.title{
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(51, 210, 231), rgb(223, 52, 186));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .addBtn{
     padding: 5px;
@@ -27,6 +35,7 @@
     width: 50px;
     font-weight: 600;
     font-size: 15px;
+    background-color: rgb(94, 107, 231)
 }
 .count{
     padding: 5px;

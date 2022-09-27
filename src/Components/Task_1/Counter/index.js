@@ -55,6 +55,7 @@ class Counter extends Component{
         const {step,start,end} = this.state
         return (
             <div className="app">
+                <h1 className="title">Counter</h1>
             <div>
              <input type='number' className="inputs" placeholder="minimal value" onChange={this.handleStartInpChange} value={start}/>
              <input type='number' className="inputs" placeholder="maximal value" onChange={this.handleEndInpChange} value={end}/>
