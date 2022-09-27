@@ -1,0 +1,42 @@
+.inputs{
+    padding: 5px;
+    border-radius: 6px;
+    margin: 10px;
+    width: 100px;
+}
+.resetBtn{
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px; 
+    width: 50px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.subBtn{
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px; 
+    width: 50px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.addBtn{
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px; 
+    width: 50px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.count{
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px; 
+    height: 100px;
+    font-size: 30px;
+
+}
+.app{
+    padding: 70px 0;
+    text-align: center;
+}
