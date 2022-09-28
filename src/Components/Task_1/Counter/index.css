@@ -8,19 +8,23 @@
     padding: 5px;
     border-radius: 6px;
     margin: 5px; 
-    width: 50px;
+    width: 90px;
+    height: 40px;
     font-weight: 600;
-    font-size: 14px;
-    background-color: pink
+    font-size: 27px;
+    background-color: rgb(138, 200, 241);
+    border:  rgb(138, 200, 241);
 }
 .subBtn{
     padding: 5px;
     border-radius: 6px;
     margin: 5px; 
-    width: 50px;
+    width: 70px;
+    height: 40px;
     font-weight: 600;
-    font-size: 15px;
-    background-color: rgb(94, 107, 231)
+    font-size: 27px;
+    background-color: rgb(138, 200, 241);
+    border:  rgb(138, 200, 241);
 }
 .title{
     font-size: 72px;
@@ -32,10 +36,12 @@
     padding: 5px;
     border-radius: 6px;
     margin: 5px; 
-    width: 50px;
+    width: 70px;
+    height: 40px;
     font-weight: 600;
-    font-size: 15px;
-    background-color: rgb(94, 107, 231)
+    font-size: 27px;
+    background-color: rgb(138, 200, 241);
+    border:  rgb(138, 200, 241);
 }
 .count{
     padding: 5px;
