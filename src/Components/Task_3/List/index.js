@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import {DATA} from '../API/index'
+import {DATA} from '../Data/index'
 
 import PhotoSettings from "../Photos";
 
@@ -33,7 +33,7 @@ class MainList extends Component {
             if(state.input !== this.state.input) {
                 if(input.length >= 1) {
                  this.setState({
-                  users:  this.copiedUsers.filter(user=>user.country.includes(input))
+                  users:  this.copiedUsers.filter(user=>user.country.toLowerCase().includes(input.toLowerCase()))
                   })
                 } else {
                     this.setState({users:this.copiedUsers})
@@ -50,7 +50,7 @@ class MainList extends Component {
         return (
             <>
              <div className="inputDiv">
-                <h1>Search User</h1>
+                <h1>Flags</h1>
                 <input placeholder="Search..." onChange={this.handleInpChange} value={input} type='text' id = "searchInput"/> 
                 </div> 
              <div className = "container"> 
