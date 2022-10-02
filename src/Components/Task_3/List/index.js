@@ -11,20 +11,21 @@ class MainList extends Component {
  
     constructor(props) {
         super(props)
-        this.copiedUsers = []
+        this.copiedflagData = []
         this.state = {
-            users:[],
+            flagData:[],
             input: '',
         }
+        this.handleInpChange = this.handleInpChange.bind(this)
     }
     componentDidMount() {
-        new Promise ((res,rej)=>{         //is it Okay?
+        new Promise (res=>{         
             res(DATA)
         })
         .then(res=>JSON.parse(res))
         .then(res=>{
-            this.setState({users: res})
-            this.copiedUsers = res 
+            this.setState({flagData: res})
+            this.copiedflagData = res 
         })
     }
 
@@ -33,20 +34,20 @@ class MainList extends Component {
             if(state.input !== this.state.input) {
                 if(input.length >= 1) {
                  this.setState({
-                  users:  this.copiedUsers.filter(user=>user.country.toLowerCase().includes(input.toLowerCase()))
+                    flagData:  this.copiedflagData.filter(flag=>flag.country.toLowerCase().includes(input.toLowerCase()))
                   })
                 } else {
-                    this.setState({users:this.copiedUsers})
+                    this.setState({flagData:this.copiedflagData})
                 }
             }
     }
 
-    handleInpChange = (e) => {
-        this.setState({input: e.target.value})
+    handleInpChange  (event)  {
+        this.setState({input: event.target.value})
     }
 
     render() {
-        const {users, input} = this.state;
+        const {flagData, input} = this.state;
         return (
             <>
              <div className="inputDiv">
@@ -54,7 +55,7 @@ class MainList extends Component {
                 <input placeholder="Search..." onChange={this.handleInpChange} value={input} type='text' id = "searchInput"/> 
                 </div> 
              <div className = "container"> 
-             {users.map(user=> <PhotoSettings key = {user.id} {...user}/>)}
+             {flagData.map(flag=> <PhotoSettings key = {flag.id} {...flag}/>)}
              </div>
               </>
         )
