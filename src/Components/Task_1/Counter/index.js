@@ -20,10 +20,15 @@ class Counter extends Component{
         }
     }
 
+    componentDidMount() {
+        let count = localStorage.getItem('count')
+        this.setState({count: +count})
+    }
     handleAdd() {
         const{count,end, step} = this.state
         if(count < +end && (count+(+step))<=+end) {
             this.setState({count:count +(+step)})
+            localStorage.setItem('count', count+ +step)
         }
     }
  
@@ -31,6 +36,7 @@ class Counter extends Component{
         const{count,start, step} = this.state
         if(count > +start && (count-(+step))>=+start) {
             this.setState({count:count -step})
+            localStorage.setItem('count', count- +step)
         }
     }
     
