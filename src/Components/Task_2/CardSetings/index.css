@@ -1,0 +1,50 @@
+.images {
+    height: 300px;
+    width: 210px;
+}
+
+.cardDiv{
+     height: 300px;
+     width: 210px;
+     border-style: solid;
+     border-color: black;
+     border-width: 3px;
+}
+.unmountDiv{
+    padding: 70px 0;
+    text-align: center;
+}
+.unmBtn {
+    width: 210px;
+    height: 30px;
+    background: none;
+    font-weight: 900;
+    border-radius: 6px;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.openBtn{
+    position: relative;
+    top: 140px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px rgb(0, 0, 0) solid;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.closeBtn{
+    font-weight: 600;
+    color: white;
+    background: none;
+    position: relative;
+    left: 180px;
+    bottom: 300px;
+    font-size: 24px;
+    border: none;
+}
